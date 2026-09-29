@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BloodTrail: blood-tracking camera and trail recorder</title>
+<meta name="description" content="BloodTrail highlights blood on the ground with your phone's camera and maps every drop back to your deer.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --paper:#E4E8DE; --ink:#1E2B1F; --moss:#4E5E4F; --blaze:#E8620A; --blood:#B3261E; --rule:#C7CEC0; }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body { margin:0; color:var(--ink); font:400 1.0625rem/1.6 "Barlow","Segoe UI",Roboto,Helvetica,Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+  main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  .hero { display:flex; gap:1.25rem; align-items:center; margin: 1rem 0 2rem; }
+  .hero svg { width: 5.5rem; height: 5.5rem; flex:none; border-radius: 1.2rem; }
+  h1 { margin:0; font:800 clamp(3rem,11vw,4.75rem)/.9 "Barlow Condensed","Arial Narrow",sans-serif; }
+  .lede { font-size:1.3rem; line-height:1.45; font-weight:500; margin:0 0 2.5rem; }
+  .step { display:grid; grid-template-columns:.9rem 1fr; gap:1rem; margin-bottom:1.75rem; }
+  .blaze { background: var(--blaze); border-radius: 2px; }
+  h2 { font:700 1.6rem/1.15 "Barlow Condensed","Arial Narrow",sans-serif; margin:0 0 .35rem; }
+  p { margin:0 0 1rem; }
+  a { color:var(--ink); text-decoration-color:var(--blaze); text-decoration-thickness:2px; text-underline-offset:3px; }
+  a:hover { color: var(--blood); }
+  a:focus-visible { outline:3px solid var(--blaze); outline-offset:3px; border-radius:2px; }
+  footer { margin-top:3rem; padding-top:1.5rem; border-top:2px solid var(--rule); color:var(--moss); }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <svg viewBox="16 16 76 76" aria-hidden="true">
+      <rect x="16" y="16" width="76" height="76" fill="#1E2B1F"/>
+      <circle cx="54" cy="54" r="27" fill="none" stroke="#FF6D00" stroke-width="3"/>
+      <path fill="#FF6D00" d="M52.5,20h3v10h-3z M52.5,78h3v10h-3z M20,52.5h10v3h-10z M78,52.5h10v3h-10z"/>
+      <path fill="#D32F2F" d="M54,34 C54,34 41,50 41,60 A13,13 0 0,0 67,60 C67,50 54,34 54,34 Z"/>
+    </svg>
+    <h1>BloodTrail</h1>
+  </div>
+
+  <p class="lede">A blood-tracking camera and trail recorder for deer hunters. Point your phone at the ground,
+  and blood lights up while everything else fades to gray.</p>
+
+  <div class="step"><span class="blaze"></span><div>
+    <h2>See blood you'd miss</h2>
+    <p>The camera and flashlight pick out fresh or dried blood on leaves, dirt and grass. The phone buzzes when
+    blood comes into view, and the highlight colors work for red-green colorblind hunters too.</p>
+  </div></div>
+
+  <div class="step"><span class="blaze"></span><div>
+    <h2>Mark every drop</h2>
+    <p>Start at the hit site and tap Mark Blood as you go. GPS records your path, and the compass points you back
+    to the last blood if the trail goes cold.</p>
+  </div></div>
+
+  <div class="step"><span class="blaze"></span><div>
+    <h2>Stays on your phone</h2>
+    <p>No accounts, no ads, no uploads. Share a trail to Google Earth or onX only when you choose.
+    Read the <a href="privacy.html">privacy policy</a>.</p>
+  </div></div>
+
+  <footer>
+    <p>Support: <a href="mailto:Sales@midtekpower.com">Sales@midtekpower.com</a><br>Midwest Solutions LLC</p>
+  </footer>
+</main>
+</body>
+</html>
